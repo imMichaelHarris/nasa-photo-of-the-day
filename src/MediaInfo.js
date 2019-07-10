@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MediaInfo = () => {
+const MediaInfo = (props) => {
     return (
         <div>
             

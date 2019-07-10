@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Media from './Media'
+import MediaInfo from "./MediaInfo";
 function App() {
   const [media, setMedia] = useState([]);
 
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <p>
         <button>Get Photo</button>
+        <MediaInfo />
         <Media media={media.url}/>
 
       </p>
