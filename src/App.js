@@ -3,6 +3,7 @@ import axios from "axios";
 import "./App.css";
 import Media from './Media'
 import MediaInfo from "./MediaInfo";
+import HDMedia from "./HDMedia";
 function App() {
   const [media, setMedia] = useState([]);
 
@@ -19,10 +20,12 @@ function App() {
   };
   useEffect(() => getAPOD(), []);
   console.log(media)
+  
   return (
     <div className="App">
       <p>
-        <button>Get Photo</button>
+        <button>Show HD Photo</button>
+        <HDMedia />
         <MediaInfo title={media.title} date={media.date}/>
         <Media media={media.url}/>
 
