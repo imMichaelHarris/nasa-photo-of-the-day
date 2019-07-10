@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       <p>
         <button>Get Photo</button>
-        <Media media={media}/>
+        <Media media={media.url}/>
 
       </p>
     </div>
