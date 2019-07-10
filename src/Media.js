@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Photo = () => {
+const Media = () => {
     return (
         <div>
             Hey
@@ -8,4 +8,4 @@ const Photo = () => {
     );
 };
 
-export default Photo;
+export default Media;
