@@ -4,6 +4,7 @@ import "./App.css";
 import Media from "./Media";
 import MediaInfo from "./MediaInfo";
 import HDMedia from "./HDMedia";
+import Description from "./Description";
 function App() {
   const [media, setMedia] = useState([]);
   const [hd, setHD] = useState(false);
@@ -27,11 +28,11 @@ function App() {
 
   return (
     <div className="App">
-      <p>
+      
         <button onClick={showHD}>Show HD Photo</button>
         <MediaInfo title={media.title} date={media.date} desc={media.explanation}/>
         {hd ? <HDMedia media={media.hdurl}/> : <Media media={media.url} /> }
-      </p>
+        <Description />
     </div>
   );
 }
