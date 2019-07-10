@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 
-const Media = (props) => {
+const Media = ({media, type}) => {
     return (
         <div>
-            <img src={props.media}/>
+            {}<img src={props.media}/>
         </div>
     );
 };
