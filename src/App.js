@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <p>
-        <button>Show HD Photo</button>
+        <button onClick={showHD}>Show HD Photo</button>
         <MediaInfo title={media.title} date={media.date} />
         {hd ? <HDMedia /> : <Media media={media.url} /> }
       </p>
