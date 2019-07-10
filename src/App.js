@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <p>
         <button>Get Photo</button>
-        <MediaInfo />
+        <MediaInfo title={media.title} date={media.date}/>
         <Media media={media.url}/>
 
       </p>
