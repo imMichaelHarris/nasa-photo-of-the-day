@@ -30,7 +30,7 @@ function App() {
       
         <button onClick={showHD}>{hd ? "Standard photo" : "Show HD Photo" }</button>
         <MediaInfo title={media.title} date={media.date} />
-        {hd ? <HDMedia media={media.hdurl}/> : <Media media={media.url} /> }
+        {hd ? <HDMedia media={media.hdurl}/> : <Media media={media.url} type={media.media_type}/> }
         <Description desc={media.explanation}/>
     </div>
   );
