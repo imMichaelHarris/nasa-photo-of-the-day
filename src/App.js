@@ -12,7 +12,7 @@ function App() {
   const getAPOD = () => {
     axios
       .get(
-        "https://api.nasa.gov/planetary/apod?api_key=fa5O3BQljsEyqfNarlgF5bX4t4TbK6vLbySh9i7H&date=2012-03-14"
+        "https://api.nasa.gov/planetary/apod?api_key=fa5O3BQljsEyqfNarlgF5bX4t4TbK6vLbySh9i7H&"
       )
       .then(res => {
         console.log(res);
@@ -21,7 +21,6 @@ function App() {
       .catch(err => console.log(err));
   };
   useEffect(() => getAPOD(), []);
-  console.log(media);
 
   const showHD = () => setHD(!hd);
   
