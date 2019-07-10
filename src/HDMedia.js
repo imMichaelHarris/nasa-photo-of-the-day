@@ -1,9 +1,9 @@
 import React from 'react';
 
-const HDMedia = () => {
+const HDMedia = ({media}) => {
     return (
         <div>
-            HD
+            <img src={media}/>
         </div>
     );
 };
