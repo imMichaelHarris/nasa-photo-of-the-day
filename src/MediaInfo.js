@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MediaInfo = (props) => {
+const MediaInfo = ({title, date}) => {
     return (
         <div>
-            
+            <h2>{title}</h2>
         </div>
     );
 };
