@@ -4,13 +4,16 @@ import "./App.css";
 import Photo from "./Photo";
 
 function App() {
-  const [photo, setPhoto] = useState([]);
+  const [media, setMedia] = useState([]);
   useEffect(() => {
     axios
       .get(
         "https://api.nasa.gov/planetary/apod?api_key=fa5O3BQljsEyqfNarlgF5bX4t4TbK6vLbySh9i7H"
       )
-      .then(res => console.log(res))
+      .then(res => {
+        console.log(res);
+        setMedia(res.data.url)
+      })
       .catch(err => console.log(err));
   }, []);
   return (
