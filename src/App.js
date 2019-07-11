@@ -28,11 +28,11 @@ function App() {
 
   return (
     <div className="App">
-      <Grid verticalAlign="middle" divided columns={3}>
-        <Grid.Column textAlign="center" color="black">
+      <Grid verticalAlign="middle" columns={3}>
+        <Grid.Column textAlign="center" color="black" stretched>
           <MediaInfo title={media.title} date={media.date} />
         </Grid.Column>
-        <Grid.Column color="black">
+        <Grid.Column >
           {hd ? (
             <HDMedia media={media.hdurl} />
           ) : (
