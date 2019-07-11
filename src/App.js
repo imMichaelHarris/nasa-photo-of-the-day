@@ -44,13 +44,13 @@ function App() {
         </Grid.Column>
       </Grid>
       <Button.Group>
-        <Button>HD</Button>
+        <Button onClick={showHD}>HD</Button>
         <Button.Or />
-        <Button>SD</Button>
+        <Button onClick={showHD}>SD</Button>
       </Button.Group>
-      <button onClick={showHD}>
+      {/* <button onClick={showHD}>
         {hd ? "Standard photo" : "Show HD Photo"}
-      </button>
+      </button> */}
     </div>
   );
 }
