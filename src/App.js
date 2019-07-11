@@ -43,6 +43,11 @@ function App() {
           <Description desc={media.explanation} />
         </Grid.Column>
       </Grid>
+      <Button.Group>
+        <Button>HD</Button>
+        <Button.Or />
+        <Button>SD</Button>
+      </Button.Group>
       <button onClick={showHD}>
         {hd ? "Standard photo" : "Show HD Photo"}
       </button>
