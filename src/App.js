@@ -27,8 +27,8 @@ function App() {
   const showHD = () => setHD(!hd);
 
   return (
-    <div>
-      <Grid verticalAlign="middle" divided columns={3} className="App">
+    <div className="App">
+      <Grid verticalAlign="middle" divided columns={3}>
         <Grid.Column textAlign="center" color="black">
           <MediaInfo title={media.title} date={media.date} />
         </Grid.Column>
@@ -43,7 +43,7 @@ function App() {
           <Description desc={media.explanation} />
         </Grid.Column>
       </Grid>
-      <Button.Group>
+      <Button.Group size="huge">
         <Button onClick={showHD}>HD</Button>
         <Button.Or />
         <Button onClick={showHD}>SD</Button>
