@@ -28,13 +28,13 @@ function App() {
   
 
   return (
-    <div className="App">
+    <Grid verticalAlign="middle" centered columns={1} className="App">
       
-        <button onClick={showHD}>{hd ? "Standard photo" : "Show HD Photo" }</button>
+        {/* <button onClick={showHD}>{hd ? "Standard photo" : "Show HD Photo" }</button> */}
         <MediaInfo title={media.title} date={media.date} />
         {hd ? <HDMedia media={media.hdurl}/> : <Media media={media.url} type={media.media_type}/> }
         <Description desc={media.explanation}/>
-    </div>
+    </Grid>
   );
 }
 
