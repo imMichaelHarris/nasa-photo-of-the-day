@@ -6,6 +6,7 @@ import Media from "./Media";
 import MediaInfo from "./MediaInfo";
 import HDMedia from "./HDMedia";
 import Description from "./Description";
+import {Grid} from 'semantic-ui-react'
 function App() {
   const [media, setMedia] = useState([]);
   const [hd, setHD] = useState(false);

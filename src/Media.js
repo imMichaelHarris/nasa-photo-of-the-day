@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import { Card } from "semantic-ui-react";
+import { Image } from "semantic-ui-react";
 
 const Media = ({ media, type }) => {
   return (
@@ -8,7 +8,7 @@ const Media = ({ media, type }) => {
       {type === "video" ? (
         <ReactPlayer url={media} />
       ) : (
-        <img src={media} alt="Nasa Photo of the day" />
+        <Image src={media} alt="Nasa Photo of the day" />
       )}
     </div>
   );
