@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should match snapshot 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="ui middle aligned three column grid"
+  >
+    <div
+      className="black stretched center aligned column"
+    >
+      <div>
+        <h2 />
+        <p />
+      </div>
+    </div>
+    <div
+      className="column"
+    >
+      <div>
+        <img
+          alt="Nasa Photo of the day"
+          className="ui image"
+        />
+      </div>
+    </div>
+    <div
+      className="black center aligned column"
+    >
+      <div>
+        <p />
+      </div>
+    </div>
+  </div>
+  <div
+    className="ui huge buttons"
+  >
+    <button
+      className="ui button"
+      onClick={[Function]}
+    >
+      HD
+    </button>
+    <div
+      className="or"
+    />
+    <button
+      className="ui button"
+      onClick={[Function]}
+    >
+      SD
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<App /> should match snapshot 2`] = `
+<div>
+  <p />
+</div>
+`;
